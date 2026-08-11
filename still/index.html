@@ -1,1 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Still — Photo Reducer</title>
+  <meta name="description" content="Still is a privacy-first photo and video compressor for iPhone.">
+  <link rel="canonical" href="https://murathos.github.io/still/">
+  <style>
+    :root {
+      color-scheme: dark;
+      --orange: #ff6a00;
+      --orange-dark: #d94f00;
+      --ink: #111;
+      --muted: #aaa;
+      --card: #1d1d1d;
+    }
 
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+                   "Helvetica Neue", sans-serif;
+      background: var(--ink);
+      color: white;
+    }
+
+    .page {
+      width: min(980px, calc(100% - 40px));
+      margin: 0 auto;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 28px 0;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      letter-spacing: .02em;
+    }
+
+    .logo {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, #ffab4d, var(--orange));
+      color: white;
+      font-size: 20px;
+      font-weight: 900;
+    }
+
+    .brand-subtitle {
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    main {
+      flex: 1;
+      display: grid;
+      place-items: center;
+      padding: 72px 0;
+    }
+
+    .hero {
+      width: min(720px, 100%);
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: var(--orange);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .16em;
+    }
+
+    h1 {
+      margin: 18px 0;
+      font-size: clamp(42px, 8vw, 82px);
+      line-height: .98;
+      letter-spacing: -.06em;
+    }
+
+    .lead {
+      margin: 0 auto;
+      max-width: 610px;
+      color: #d0d0d0;
+      font-size: 20px;
+      line-height: 1.55;
+    }
+
+    .cards {
+      margin-top: 48px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .card {
+      padding: 22px;
+      border: 1px solid #333;
+      border-radius: 18px;
+      background: var(--card);
+      text-align: left;
+    }
+
+    .card strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 17px;
+    }
+
+    .card span {
+      color: var(--muted);
+      line-height: 1.45;
+      font-size: 14px;
+    }
+
+    .actions {
+      margin-top: 42px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 14px 20px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+      color: white;
+      background: var(--orange);
+    }
+
+    a.button:hover { background: var(--orange-dark); }
+
+    a.secondary {
+      background: #292929;
+    }
+
+    footer {
+      padding: 28px 0;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-size: 13px;
+      border-top: 1px solid #292929;
+    }
+
+    footer a {
+      color: #ddd;
+      text-decoration: none;
+    }
+
+    footer a:hover { color: var(--orange); }
+
+    @media (max-width: 680px) {
+      .cards { grid-template-columns: 1fr; }
+      main { padding: 48px 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="logo">S</div>
+      <div>
+        <div>Still</div>
+        <div class="brand-subtitle">Photo Reducer</div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="eyebrow">STILL — PHOTO REDUCER</div>
+        <h1>Make room for what matters.</h1>
+        <p class="lead">
+          Compress photos, videos, and Live Photos on your iPhone.
+          Keep your gallery lighter, your sharing faster, and your memories yours.
+        </p>
+
+        <div class="cards">
+          <div class="card">
+            <strong>Photo & video compression</strong>
+            <span>Reduce file sizes while keeping control over quality and resolution.</span>
+          </div>
+          <div class="card">
+            <strong>Privacy-first workflow</strong>
+            <span>Your media stays under your control. Advertising and attribution details are disclosed clearly.</span>
+          </div>
+          <div class="card">
+            <strong>Simple by design</strong>
+            <span>Select, compress, review, and save without a complicated editing workflow.</span>
+          </div>
+        </div>
+
+        <div class="actions">
+          <a class="button" href="/still-privacy/">Privacy Policy</a>
+          <a class="button secondary" href="/still-privacy/support">Support</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 LiteralVoid Studios</span>
+      <a href="/still-privacy/">Privacy Policy</a>
+      <a href="/still-privacy/support">Support</a>
+    </footer>
+  </div>
+</body>
+</html>
